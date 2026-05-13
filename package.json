@@ -1,0 +1,26 @@
+{
+  "name": "fortune_cookies_ai_og",
+  "version": "1.0.0",
+  "description": "Cookieverse / FortuneCookiesAI smart contracts deployment repo",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "deploy:og": "hardhat run scripts/deploy-og.ts --network ogMainnet",
+    "check:og": "hardhat run scripts/check-og.ts --network ogMainnet",
+    "export:abi:og": "node scripts/export-abi-og.js",
+    "set-price:og": "hardhat run scripts/set-mint-price-og.ts --network ogMainnet"
+  },
+  "keywords": ["cookieverse", "fortune-cookies-ai", "0g", "erc721", "hardhat"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.15.0",
+    "hardhat": "^3.4.5",
+    "typescript": "^5.9.2"
+  }
+}
