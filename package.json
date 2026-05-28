@@ -7,16 +7,31 @@
   "scripts": {
     "compile": "hardhat compile",
     "clean": "hardhat clean",
+
     "deploy:og": "hardhat run scripts/deploy-og.ts --network ogMainnet",
     "check:og": "hardhat run scripts/check-og.ts --network ogMainnet",
     "export:abi:og": "node scripts/export-abi-og.js",
-    "set-price:og": "hardhat run scripts/set-mint-price-og.ts --network ogMainnet"
+    "set-price:og": "hardhat run scripts/set-mint-price-og.ts --network ogMainnet",
+    "verify:og": "hardhat verify --network ogMainnet",
+
+    "check:xlayer": "hardhat run scripts/check-xlayer.ts --network xLayerMainnet",
+    "deploy:xlayer": "hardhat run scripts/deploy-xlayer.ts --network xLayerMainnet",
+    "set-price:xlayer": "hardhat run scripts/set-mint-price-xlayer.ts --network xLayerMainnet",
+    "export:abi:xlayer": "node scripts/export-abi-xlayer.js"
+
   },
-  "keywords": ["cookieverse", "fortune-cookies-ai", "0g", "erc721", "hardhat"],
+  "keywords": [
+    "cookieverse",
+    "fortune-cookies-ai",
+    "0g",
+    "erc721",
+    "hardhat"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^3.0.17",
     "@openzeppelin/contracts": "^5.4.0",
     "dotenv": "^17.2.3",
     "ethers": "^6.15.0",

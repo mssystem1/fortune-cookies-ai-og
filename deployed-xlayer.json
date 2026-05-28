@@ -1,0 +1,9 @@
+{
+  "network": "xLayerMainnet",
+  "chainId": 196,
+  "contract": "FortuneCookiesAI_XLayer",
+  "address": "0x114252793390F60ab3302d3ff6b229382Ac3AA32",
+  "deployer": "0xAcefeF5eD13c2d4d0F38970e5C15B926a9CBCc70",
+  "explorer": "https://www.okx.com/web3/explorer/xlayer/address/0x114252793390F60ab3302d3ff6b229382Ac3AA32",
+  "deployedAt": "2026-05-28T15:05:55.990Z"
+}
