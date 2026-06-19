@@ -27,6 +27,9 @@ const OG_MAINNET_RPC_URL =
 const X_LAYER_MAINNET_RPC_URL =
   process.env.X_LAYER_MAINNET_RPC_URL || "https://rpc.xlayer.tech";
 
+const ARBITRUM_MAINNET_RPC_URL =
+  process.env.ARBITRUM_MAINNET_RPC_URL || "https://arb1.arbitrum.io/rpc";
+
 export default defineConfig({
   plugins: [hardhatEthers, hardhatVerify],
 
@@ -74,11 +77,23 @@ export default defineConfig({
       url: X_LAYER_MAINNET_RPC_URL,
       accounts: normalizePrivateKey(process.env.PRIVATE_KEY),
     },
+
+    arbitrumOne: {
+      type: "http",
+      chainType: "generic",
+      chainId: 42161,
+      url: ARBITRUM_MAINNET_RPC_URL,
+      accounts: normalizePrivateKey(process.env.PRIVATE_KEY),
+    },
   },
 
   verify: {
     etherscan: {
-      apiKey: process.env.OG_CHAINSCAN_API_KEY || "empty"
+      apiKey:
+        process.env.ETHERSCAN_API_KEY ||
+        process.env.ARBISCAN_API_KEY ||
+        process.env.OG_CHAINSCAN_API_KEY ||
+        "empty"
     }
   },
 

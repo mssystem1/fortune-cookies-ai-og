@@ -17,13 +17,20 @@
     "check:xlayer": "hardhat run scripts/check-xlayer.ts --network xLayerMainnet",
     "deploy:xlayer": "hardhat run scripts/deploy-xlayer.ts --network xLayerMainnet",
     "set-price:xlayer": "hardhat run scripts/set-mint-price-xlayer.ts --network xLayerMainnet",
-    "export:abi:xlayer": "node scripts/export-abi-xlayer.js"
+    "export:abi:xlayer": "node scripts/export-abi-xlayer.js",
 
+    "check:arbitrum": "hardhat run scripts/check-arbitrum.ts --network arbitrumOne",
+    "deploy:arbitrum": "hardhat run scripts/deploy-arbitrum.ts --network arbitrumOne",
+    "inspect:arbitrum": "hardhat run scripts/inspect-arbitrum.ts --network arbitrumOne",
+    "configure:arbitrum": "hardhat run scripts/configure-arbitrum.ts --network arbitrumOne",
+    "verify:arbitrum": "hardhat verify etherscan --network arbitrumOne --build-profile default --contract contracts/FortuneCookiesAI_ARBITRUM.sol:FortuneCookiesAI_Arbitrum",
+    "export:abi:arbitrum": "node scripts/export-abi-arbitrum.js"
   },
   "keywords": [
     "cookieverse",
     "fortune-cookies-ai",
     "0g",
+    "arbitrum",
     "erc721",
     "hardhat"
   ],

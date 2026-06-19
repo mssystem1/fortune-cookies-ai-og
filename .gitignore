@@ -7,4 +7,5 @@ typechain-types/
 coverage/
 coverage.json
 deployed-og.json
+deployed-arbitrum.json
 .DS_Store

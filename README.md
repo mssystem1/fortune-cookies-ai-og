@@ -2,6 +2,9 @@
 
 Standalone Hardhat deployment project for Cookieverse `FortuneCookiesAI` smart contracts.
 
+For Arbitrum One deployment and Arbiscan verification, see
+[`ARBITRUM_DEPLOYMENT.md`](./ARBITRUM_DEPLOYMENT.md).
+
 This repo supports:
 
 - Existing `FortuneCookiesAI_OG` deployment on **0G Mainnet**
